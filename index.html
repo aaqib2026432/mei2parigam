@@ -1,3 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MEI School Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    
+
+        header {
+            background-color: #5e8125;
+            color:#fff;
+            padding: x;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+.logo {
+            float: left;
+            margin-right: 20px;
+             width: 200px;
+             height:200px;
+             border-radius:100px;
+         overflow: hidden;
+        }
+h2{    text-align: center;
+           font-size:40px;
+   }
+   h1{font-size:50px;}
+
+    nav {
+            background-color: #5e8125;
+
+       color: #fff;
+             padding: 10px;
+
+    }
+
+    nav ul {
+      text-align: center;
+      list-style-type: none;
+      margin: r40;
+      padding: 50;
+    }
+
+    nav ul li {
+     text-align: center;
+      display: inline-block;
+            margin-right: 10px;
+
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #5e8125;
+            padding: 5px;
+
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #5e8125;
+            padding: 20px;
+                  
+      color: #fff;
+      text-align: center;
+    }
+    
+.imgs { 
+      width: 990px;
+      height: 700px;
+     // max-width: 100%;
+      //max-height: 100%;
+    }
+
+ .slider {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .slider ul {
+      list-style: none;
+      width: 300%;
+      animation: slide 20s infinite;
+    }
+    
+    .slider li {
+      float: right;
+      width: 33.3333%;
+    }
+    
+    .slider img {
+     width: 70%;
+     height: 70%;
+     border-radius:50px;
+         overflow: hidden;
+   }
+    
+    @keyframes slide {
+      0% { margin-left: 0; }
+      33.3333% { margin-left: -100%; }
+      66.6666% { margin-left: -200%; }
+      100% { margin-left: 0; }
+    }
+
+
+    
+
+        /* Add some space below the header to prevent content from being hidden */
+        body {
+            padding-top: 50px;
+        }
+
+        /* Add some styling to the rest of the content (just for demonstration purposes) */
+        .content {
+            padding: 20px;
+        }
+
+
+        .menu-icon {
+            position: fixed;
+            top: 190px;
+            right: 30px;
+            width: 30px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .menu-icon span {
+            display: block;
+            width: 50px;
+            height: 5px;
+            background-color: #333;
+            margin-bottom: 5px;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -200px; /* Off-canvas, hidden initially */
+            width: 200px;
+            height: 100%;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 998;
+            transition: right 0.3s ease;
+        }
+
+        .menu.active {
+            right: 0; /* Show the menu */
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+ #whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      background-color:green;
+            color: #f9f9f9;
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+    }
+    .centered-text {
+            text-align: center;
+              }
+    }
+    </style>
+</head>
 <body>
-    <a href="b/a.html">a</a><br>
+    <header>
+<img class="logo" src="\images\logo.jpg" >
+        <h1>MOHAMMADIYA EDUCATIONAL INSTITUTE PARIGAM</h1>
+           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P>
+           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P>
+
+
+    </header>
+<img class="imgs"src="\images\ima.jpg">
+
+  <nav>
+    <ul>
+      <li><h2>FROM DARKNESS TO LIGHT</h2></li>
+
+    </ul>
+  </nav>
+
+<section> 
+    <h2>About Us</h2>
+    <p class="centered-text"> "Discover Excellence at Mohammadiya Educational Institute! Embrace a Journey of Knowledge with our State-of-the-Art Infrastructure in our 3-story Building. Immerse yourself in Rich Islamic Teachings, Pray on Time in our Serene Environment, and Unlock Limitless Opportunities with Comprehensive Computer Knowledge. Prepare to Thrive both Academically and Spiritually at Mohammadiya!"!</p>
+  </section>
+<div class="slider">
+    <ul>
+      <li><img src="images/mei.jpg"  ></li>
+      <li><img src="images/imb.jpg" ></li>
+      <li><img src="images/imc.jpg" ></li>
+    </ul>
+  </div>
+
+  <script>
+    // Optional: Stop the slider on hover
+    var slider = document.querySelector('.slider');
+    slider.addEventListener('mouseenter', function() {
+      this.querySelector('ul').style.animationPlayState = 'paused';
+    });
+    slider.addEventListener('mouseleave', function() {
+      this.querySelector('ul').style.animationPlayState = 'running';
+    });
+  </script>
+
+ 
+    <div class="content">
+
+       
+
+
+<div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li>Menu Item 0</li>
+            <li>Menu Item 0</li>
+            <li>Menu Item 0</li>
+            <li>Menu Item 0</li>
+            <li>Menu Item 0</li>
+            <li><a href="#"><b>Home</b></li>
+            <li><a href="https://linktr.ee/mohammadaaqib"><b>About</b></a></li>
+            <li><a href="#"><b>Gallery</b></a></li>
+            <li><a href="https://noticesmei.netlify.app"><b>Notices</b></a></li>
+            <li><a href="https://aaqibahanger.netlify.app/"><b>Faculty</b></a></li>
+            <li><a href="#"><b>Result</b></a></li>
+            
+            
+            
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    
+        window.onscroll = function() {
+            // Get the header element
+            var header = document.querySelector("header");
+            
+            // Check if the user has scrolled down at least the header's height
+            var headerHeight = header.offsetHeight;
+            if (window.pageYOffset > headerHeight) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        };
+    </script>
+<a id="whatsapp-icon" href="https://api.whatsapp.com/send?phone=6005027432">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <!-- Add the Font Awesome CDN for the WhatsApp icon -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+ <footer>
+    <p>&copy; 2023 My School MEI parigam. All rights reserved.</p>
+   <p>Developer</p>
+    <a href="https://wa.me/6005027432"> <p><b>Er.Mohammad Aaqib Ahanger</b>.</p></a>
+  </footer>
 </body>
+</html>
